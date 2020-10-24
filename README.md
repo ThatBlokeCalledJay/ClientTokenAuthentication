@@ -1,15 +1,15 @@
 # Client Token Authentication
 Client token authentication middleware for ASP.Net core applications.
 
-## 1. Add the authentication schema, middleware and token store.
+## 1. Add the authentication scheme, middleware and token store.
 
 ```c#
 public void ConfigureServices(IServiceCollection services)
 {
     services.AddControllers();
 
-    // Add Client Token Auth Schema + Middleware
-    services.AddClientTokenAuthenticationSchema();
+    // Add Client Token Auth Scheme + Middleware
+    services.AddClientTokenAuthenticationScheme();
     
     // Add Your Implementation of ITokenUserStore
     services.AddTransient<ITokenUserStore, DummyTokenUserStore>();
