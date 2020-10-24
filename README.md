@@ -31,7 +31,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-This will allow the user to authenticate swagger requests by providing the required `client id` and `token`.
+This will allow the user to authenticate swagger requests by providing the required `Client-ID` and `API-Key` header values.
 
 ## 2. Add Authorization
 
