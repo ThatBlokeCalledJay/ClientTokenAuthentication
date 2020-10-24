@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientTokenAuthentication", "ClientTokenAuthentication\ClientTokenAuthentication.csproj", "{671B5D82-935F-4390-BF3E-46FF383DAC25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientTokenAuthentication", "ClientTokenAuthentication\ClientTokenAuthentication.csproj", "{671B5D82-935F-4390-BF3E-46FF383DAC25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientTokenAuthentication.Tests", "ClientTokenAuthentication.Tests\ClientTokenAuthentication.Tests.csproj", "{79FF8406-4CB3-43A6-AA14-0834C25CBECF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{671B5D82-935F-4390-BF3E-46FF383DAC25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{671B5D82-935F-4390-BF3E-46FF383DAC25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{671B5D82-935F-4390-BF3E-46FF383DAC25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79FF8406-4CB3-43A6-AA14-0834C25CBECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79FF8406-4CB3-43A6-AA14-0834C25CBECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79FF8406-4CB3-43A6-AA14-0834C25CBECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79FF8406-4CB3-43A6-AA14-0834C25CBECF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
