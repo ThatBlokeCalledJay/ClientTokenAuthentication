@@ -1,7 +1,11 @@
 # Client Token Authentication
+[![Build status](https://solvoterra.visualstudio.com/ThatBlokeCalledJay/_apis/build/status/GitHub%20Repos/GitHub%20ClientTokenAuthentication)](https://solvoterra.visualstudio.com/ThatBlokeCalledJay/_build/latest?definitionId=36)
+
 Client token authentication middleware for ASP.Net core applications.
 
-## 1. Add the authentication scheme, middleware and token store.
+## Setup
+
+### 1. Add the authentication scheme, middleware and token store.
 
 ```c#
 public void ConfigureServices(IServiceCollection services)
@@ -33,7 +37,7 @@ public void ConfigureServices(IServiceCollection services)
 
 This will allow the user to authenticate swagger requests by providing the required `Client-ID` and `API-Key` header values.
 
-## 2. Add Authorization
+### 2. Add Authorization
 
 In `Startup.Configure` call  `app.UseAuthorization()` like normal. 
 
@@ -46,7 +50,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 }
 ```
 
-## 3. Authenticate Endpoints
+### 3. Authenticate Endpoints
 
 Finally, add the `AuthorizeClientToken` attribute to the controllers or individual endpoints that require client/token authentication.
 
