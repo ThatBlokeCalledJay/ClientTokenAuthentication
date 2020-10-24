@@ -14,7 +14,7 @@ namespace ClientTokenAuthentication
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = AuthenticationSchemeOptions.ClientTokenAuthenticationScheme;
-            }).AddScheme<ClientTokenAuthenticationSchemaOptions, ClientTokenAuthenticationHandler>(AuthenticationSchemeOptions.ClientTokenAuthenticationScheme, o => { });
+            }).AddScheme<ClientTokenAuthenticationSchemeOptions, ClientTokenAuthenticationHandler>(AuthenticationSchemeOptions.ClientTokenAuthenticationScheme, o => { });
 
             return services;
         }

@@ -3,7 +3,7 @@
 namespace ClientTokenAuthentication
 {
     /// <summary>
-    /// Implementation of the <seealso cref="AuthorizeAttribute"/> using the ClientTokenAuthenticationScheme schema.
+    /// Implementation of the <seealso cref="AuthorizeAttribute"/> using the ClientTokenAuthenticationScheme scheme.
     /// </summary>
     public class AuthorizeClientTokenAttribute : AuthorizeAttribute
     {

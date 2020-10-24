@@ -8,15 +8,15 @@ using Microsoft.Extensions.Options;
 
 namespace ClientTokenAuthentication
 {
-    public class ClientTokenAuthenticationSchemaOptions : Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions { }
+    public class ClientTokenAuthenticationSchemeOptions : Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions { }
 
     /// <inheritdoc />
-    public class ClientTokenAuthenticationHandler : AuthenticationHandler<ClientTokenAuthenticationSchemaOptions>
+    public class ClientTokenAuthenticationHandler : AuthenticationHandler<ClientTokenAuthenticationSchemeOptions>
     {
         private readonly ITokenUserStore _tokenUserStore;
 
         public ClientTokenAuthenticationHandler(
-            IOptionsMonitor<ClientTokenAuthenticationSchemaOptions> options,
+            IOptionsMonitor<ClientTokenAuthenticationSchemeOptions> options,
             ILoggerFactory logger, UrlEncoder encoder, ISystemClock clock, ITokenUserStore tokenUserStore)
             : base(options, logger, encoder, clock)
         {
