@@ -29,9 +29,9 @@ namespace ExampleAPI3x
             });
 
             // Add Client Token Auth Schema + Middleware
-            services.AddClientTokenAuthenticationSchema();
+            services.AddClientTokenAuthenticationScheme();
 
-            // Add Your Implementation of A Token Store
+            // Add Your Implementation of ITokenUserStore
             services.AddTransient<ITokenUserStore, DummyTokenUserStore>();
         }
 

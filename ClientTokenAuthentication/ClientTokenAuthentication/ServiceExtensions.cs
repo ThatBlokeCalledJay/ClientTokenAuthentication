@@ -5,16 +5,16 @@ namespace ClientTokenAuthentication
     public static class ServiceExtensions
     {
         /// <summary>
-        /// Add Client/Token based authentication schema.
+        /// Add Client/Token based authentication scheme.
         /// </summary>
         /// <param name="services"></param>
         /// <returns></returns>
-        public static IServiceCollection AddClientTokenAuthenticationSchema(this IServiceCollection services)
+        public static IServiceCollection AddClientTokenAuthenticationScheme(this IServiceCollection services)
         {
             services.AddAuthentication(options =>
             {
-                options.DefaultAuthenticateScheme = AuthenticationSchemaOptions.ClientTokenAuthenticationSchema;
-            }).AddScheme<ClientTokenAuthenticationSchemaOptions, ClientTokenAuthenticationHandler>(AuthenticationSchemaOptions.ClientTokenAuthenticationSchema, o => { });
+                options.DefaultAuthenticateScheme = AuthenticationSchemeOptions.ClientTokenAuthenticationScheme;
+            }).AddScheme<ClientTokenAuthenticationSchemaOptions, ClientTokenAuthenticationHandler>(AuthenticationSchemeOptions.ClientTokenAuthenticationScheme, o => { });
 
             return services;
         }

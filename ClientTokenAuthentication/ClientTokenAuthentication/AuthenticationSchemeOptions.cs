@@ -1,8 +1,8 @@
 ﻿namespace ClientTokenAuthentication
 {
-    public static class AuthenticationSchemaOptions
+    public static class AuthenticationSchemeOptions
     {
-        public const string ClientTokenAuthenticationSchema = "ClientTokenAuthenticationSchema";
+        public const string ClientTokenAuthenticationScheme = "ClientTokenAuthenticationScheme";
     }
 
     public static class ClientTokenClaimOptions

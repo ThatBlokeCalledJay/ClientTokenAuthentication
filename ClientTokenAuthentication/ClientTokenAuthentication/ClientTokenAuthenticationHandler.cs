@@ -8,7 +8,7 @@ using Microsoft.Extensions.Options;
 
 namespace ClientTokenAuthentication
 {
-    public class ClientTokenAuthenticationSchemaOptions : AuthenticationSchemeOptions { }
+    public class ClientTokenAuthenticationSchemaOptions : Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions { }
 
     /// <inheritdoc />
     public class ClientTokenAuthenticationHandler : AuthenticationHandler<ClientTokenAuthenticationSchemaOptions>
